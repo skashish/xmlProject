@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="0.92">
+{% autoescape off %}
+    {% for item in list%}
+    {{html}}
+    {% endfor %}
+{% endautoescape %}

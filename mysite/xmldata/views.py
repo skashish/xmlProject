@@ -1,0 +1,17 @@
+from django.shortcuts import render
+from django.shortcuts import HttpResponse
+from django.core.exceptions import *
+from xmldata.xml_functions import xml_output
+
+def index(request):
+    return render(request, 'xmldata/form.html')
+
+def result(request):
+    if request.method == 'POST':
+        root_path = request.POST.get('textfield', "")
+        html = xml_output(root_path) 
+        context = {'html' : html, 'foo' : 'bar' }
+        return(render(request, 'xmldata/myfile.xml',context,content_type="text/xml"))
+       
+def realview(request):
+    return(HttpResponse("XML Creator main Page<br><br><a href='/xmldata/index'>Create XML</a>"))
