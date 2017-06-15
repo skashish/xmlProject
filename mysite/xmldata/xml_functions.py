@@ -10,12 +10,12 @@ def xml_dir(pth, et_element=None):
     else:
         et_element = ET.SubElement(et_element, pth.name)
 
-    for file in (fle for fle in pth.iterdir() if fle.is_file()):
-        ET.SubElement(et_element, file.name)
-        #print(', Hash = ',md5(Path(file.name).absolute()))
+    for file in (fle for fle in sorted(pth.iterdir()) if fle.is_file()):
+        complete_file_name = 'file name = "'  + file.name + '" hash = "' + md5(str(file)) + '"'
+        ET.SubElement(et_element, complete_file_name)
 
-    for directory in (fle for fle in pth.iterdir() if fle.is_dir()):
-        xml_dir(directory, et_element)
+    for directory in (fle for fle in sorted(pth.iterdir()) if fle.is_dir()):
+        xml_dir(directory,et_element)
 
     return(et_element)
 
@@ -40,5 +40,11 @@ def xml_output(path_of_dir):
     strg = ET.tostring(ret, method='xml').decode()
     return(strg)
 
-    
+def md5(fname):
+    hash_md5 = hashlib.md5()
+    with open(fname, "rb") as f:
+        for chunk in iter(lambda: f.read(4096), b""):
+            hash_md5.update(chunk)
+    return(hash_md5.hexdigest())
+   
     

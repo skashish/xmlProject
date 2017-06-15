@@ -1,6 +1,1 @@
-{{ context_var|safe }}
-{% autoescape off %}
-    {{ html }}
-{% endautoescape %}
-
-
+{{ context_var|safe }}{% autoescape off %}{{ html }}{% endautoescape %}

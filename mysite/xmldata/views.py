@@ -10,8 +10,10 @@ def result(request):
     if request.method == 'POST':
         root_path = request.POST.get('textfield', "")
         html = xml_output(root_path) 
-        context = {'html' : html, 'foo' : 'bar' }
-        return(render(request, 'xmldata/myfile.xml',context,content_type="text/xml"))
+        context = {'html' : html }
+        return(render(request, 'xmldata/myfile.xml',context,content_type="xml/force-download"))
        
 def realview(request):
     return(HttpResponse("XML Creator main Page<br><br><a href='/xmldata/index'>Create XML</a>"))
+
+
