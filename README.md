@@ -9,8 +9,7 @@ All the files also have their md5sum along with their names.
 
 1. Make sure python3 is installed.
    If not installed, install using 
-
-`sudo apt-get install python3` 
+   `sudo apt-get install python3` 
 
 2. Install python package maqnager pip.
    `sudo apt-get install python-pip`
@@ -18,13 +17,14 @@ All the files also have their md5sum along with their names.
 3. Install Django
    `sudo pip3 install django`
 
-4. Download the repository `https://github.com/skashish/xmlProject.git`
+4. Download this repository using
+   `git clone https://github.com/skashish/xmlProject.git`
 
 5. Change Working Directory. 
-`cd ./xmlProject/mysite`.
+   `cd ./xmlProject/mysite`.
 
 6. Run the server using 
-`python3 manage.py runserver`.
+   `python3 manage.py runserver`.
 
 At this point, hopefully the server should be up and running. Visit http://127.0.0.1:8000 
 on your browser to visit the website.
