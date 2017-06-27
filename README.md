@@ -5,7 +5,7 @@ Written in Django Framework, xmlProject is an app which takes the path of a fold
 The xml file contains all the files and directories inside the given directory recursively.
 All the files also have their md5sum along with their names.
 
-# How to install (on debian/Ubuntu)
+# How to install (on Debian/Ubuntu family)
 
 1. Make sure python3 is installed.
    If not installed, install using 
@@ -14,7 +14,7 @@ All the files also have their md5sum along with their names.
 
 2. Install python package manager pip.
   
-  `sudo apt-get install python-pip`
+   `sudo apt-get install python-pip`
 
 3. Install Django
    
