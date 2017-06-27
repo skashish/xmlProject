@@ -23,10 +23,5 @@ from django.views.generic import RedirectView
 urlpatterns = [
     url(r'^$', RedirectView.as_view(url='/xmldata/')),
     url(r'^admin/', admin.site.urls),
-    url(r'^polls/', include('polls.urls')),
-    url(r'^music/', include('music.urls')),
-    url(r'^xmldata/',include('xmldata.urls'))
-    #url(r'^(xmldata/search/)$', include('xmldata.urls')),
-    #url(r'^xmldata/index/', include('xmldata.urls')),
-
+    url(r'^xmldata/',include('xmldata.urls')),
 ]
