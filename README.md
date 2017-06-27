@@ -5,10 +5,12 @@ Written in Django Framework, xmlProject is an app which takes the path of a fold
 The xml file contains all the files and directories inside the given directory recursively.
 All the files also have their md5sum along with their names.
 
-# how to install
+# How to install (on debian/Ubuntu)
 
 1. Make sure python3 is installed.
-   If not installed, install using `sudo apt-get install python3` (on debian/Ubuntu)
+   If not installed, install using 
+
+`sudo apt-get install python3` 
 
 2. Install python package maqnager pip.
    `sudo apt-get install python-pip`
@@ -18,9 +20,11 @@ All the files also have their md5sum along with their names.
 
 4. Download the repository `https://github.com/skashish/xmlProject.git`
 
-5. Change Working Directory. `cd ./xmlProject/mysite`.
+5. Change Working Directory. 
+`cd ./xmlProject/mysite`.
 
-6. Run the server using `python3 manage.py runserver`.
+6. Run the server using 
+`python3 manage.py runserver`.
 
 At this point, hopefully the server should be up and running. Visit http://127.0.0.1:8000 
 on your browser to visit the website.
