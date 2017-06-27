@@ -34,3 +34,14 @@ All the files also have their md5sum along with their names.
 
 At this point, hopefully the server should be up and running. Visit http://127.0.0.1:8000 
 on your browser to visit the website.
+
+# Screenshots
+
+<p align="left" style="margin: 20px">
+  <img src="http://i.imgur.com/6L7wV7l.png" width="250"/>
+  <img align = "right" src="http://i.imgur.com/4mAbHz0.png" width="300"/>
+</p>
+<br/>
+<p align="center">
+   <img src="http://i.imgur.com/OAYcUM3.png">
+</p>
