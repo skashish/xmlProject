@@ -14,7 +14,7 @@ All the files also have their md5sum along with their names.
 
 2. Install python package manager pip.
   
-   `sudo apt-get install python-pip`
+   `sudo apt-get install python3-pip`
 
 3. Install Django
    
